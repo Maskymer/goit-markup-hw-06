@@ -282,17 +282,64 @@ img {
   margin-top: 0;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
-  max-width: 1440px;
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office.jpg);
+  padding-top: 72px;
+  padding-bottom: 72px;
+  max-width: 767px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/retin-mob/Dark-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/retin-mob/Dark-bg-mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero{
+    padding-top: 112px;
+      padding-bottom: 112px;
+max-width: 768px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/retin-tab/Dark-bg-tab@1x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+   
+    max-width: 768px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/retin-tab/Dark-bg-tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .section-hero {
+    padding-top: 188px;
+      padding-bottom: 188px;
+max-width: 1440px;
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/retin-desc/people-office\ 1-desc@1x.jpg);
+  }
+}
+@media screen and (min-width: 1158px) and (min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .section-hero {
+    max-width: 1440px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+      url(../images/retin-desc/people-office\ 1-desc@2x.jpg);
+  }
 }
 
 .container-hero {
@@ -320,21 +367,20 @@ img {
   text-align: center;
   font-size: 36px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 1.11;
   margin-bottom: 72px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-header {
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     margin-bottom: 36px;
   }
 }
 
 @media screen and (min-width: 1158px) {
   .hero-header {
-    line-height: 1.07;
     max-width: 496px;
     margin-bottom: 48px;
   }
@@ -371,8 +417,15 @@ img {
 /* #region items (section 2) */
 
 .section-items {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+.section-items {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .header-section-items {
@@ -475,8 +528,15 @@ img {
 
 .section-team {
   background: #f4f4fd;
-  padding-top: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section-team{
+padding-top: 120px;
   padding-bottom: 120px;
+  }
 }
 
 .header-team {
@@ -495,6 +555,8 @@ img {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
+  align-content: center;
+  justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -512,6 +574,7 @@ img {
 
 .card-team {
   background-color: #ffffff;
+  max-width: 264px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -520,6 +583,7 @@ img {
 @media screen and (min-width: 768px) {
   .card-team {
     width: calc((100% - 24px) / 2);
+    
   }
 }
 
@@ -533,13 +597,13 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-
+/*
 .card-team-posi {
   width: 232px;
   height: auto;
   margin: 0 auto;
 }
-
+*/
 .card-team-header {
   color: #2e2f42;
   text-align: center;
@@ -580,9 +644,16 @@ img {
 /* #endregion */
 
 /* #region portfolio (section 4) */
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
+.section-portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+  .section-portfolio {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
 }
 
 .header-portfolio {
@@ -656,7 +727,25 @@ img {
 }
 
 .portfolio-image {
+width: 288px;
+  height: 280px;
 }
+
+@media screen and (min-width: 768px) {
+  .portfolio-image{
+width: 356px;
+  height: 300px;
+
+  }
+}
+
+@media screen and (min-width: 1158px) {
+    .portfolio-image {
+width: 360px;
+  height: 300px;
+    }
+}
+
 
 .portfolio-card-info {
   padding: 32px 16px;
@@ -677,8 +766,15 @@ img {
 /* #region footer */
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+@media screen and (min-width: 1158px) {
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 .union {
@@ -689,7 +785,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .union {
-    gap: 24px;
     row-gap: 72px;
     align-content: flex-start;
   }
@@ -701,6 +796,27 @@ img {
   }
 }
 
+.footer-left{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+align-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-left {
+    max-width: 264px;
+     display: block;
+     margin-right: 24px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer-left {
+      margin-right: 120px;
+    }
+}
+
 .footer-logo {
   color: #4d5ae5;
   font-family: 'Raleway', sans-serif;
@@ -710,6 +826,8 @@ img {
   letter-spacing: 0.03em;
   display: inline-block;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -721,25 +839,21 @@ img {
   }
 }
 
-.footer-text {
-  color: #f4f4fd;
-  max-width: 264px;
-}
-
 .footer-accent-logo {
   color: #f4f4fd;
   background-color: #2e2f42;
 }
 
-.footer-left {
-  align-content: center;
+.footer-text {
+  color: #f4f4fd;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-left {
-    justify-content: left;
-    margin-right: 120px;
-  }
+.footer-text {
+
+  max-width: 264px;
+}
 }
 
 .footer .container {
@@ -848,6 +962,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -864,7 +979,7 @@ img {
 }
 
 .input-form-subscrible {
-  width: 264px;
+  width: 288px;
   height: 40px;
   background-color: transparent;
   font-size: 12px;
@@ -875,6 +990,12 @@ img {
   border-radius: 4px;
   border: 1px solid #ffffff;
   padding: 8px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .input-form-subscrible {
+    width: 264px;
+  }
 }
 
 .label-form-subscrible::placeholder {
