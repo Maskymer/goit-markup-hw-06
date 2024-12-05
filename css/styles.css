@@ -771,6 +771,12 @@ width: 360px;
   padding-bottom: 96px;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+
+  }
+}
+
 @media screen and (min-width: 1158px) {
 .footer {
     padding-top: 100px;
@@ -778,22 +784,32 @@ width: 360px;
   }
 }
 
-.union {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 72px;
+.container.union {
+
+display: flex;
+  flex-direction: column;
+  gap: 72px;
+  text-align: left;
+
 }
 
 @media screen and (min-width: 768px) {
-  .union {
+  .container.union {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
     row-gap: 72px;
-    align-content: flex-start;
+    
+    padding-left: 108px;
+
+   
   }
 }
 
 @media screen and (min-width: 1158px) {
-  .union {
+.container.union {
     align-items: baseline;
+    padding-left: 0;
   }
 }
 
@@ -830,12 +846,13 @@ align-content: center;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  text-align: left;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
   .footer-logo {
-    text-align: left;
-    text-transform: uppercase;
+  
     display: inline-block;
   }
 }
@@ -843,6 +860,11 @@ align-content: center;
 .footer-accent-logo {
   color: #f4f4fd;
   background-color: #2e2f42;
+  font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 
 .footer-text {
@@ -926,8 +948,8 @@ align-content: center;
 
 @media screen and (min-width: 768px) {
   .footer-form {
-    margin-left: 0;
-    margin-right: auto;
+ 
+  margin: 0;
   }
 }
 
@@ -1286,7 +1308,8 @@ input[type='checkbox']:checked + .user-agreement-text > .custom-checkbox {
 @media screen and (max-width: 767px) {
   .modal-mob-nav {
     position: fixed;
-    min-height: 640px;
+    width: 320px;
+  
     background-color: #fff;
     top: 0;
     left: 0;
@@ -1315,7 +1338,13 @@ input[type='checkbox']:checked + .user-agreement-text > .custom-checkbox {
    padding-right: 16px;
     display: flex;
       flex-direction: column;
+   
       height: 100%;
+}
+
+.mob-navigation{
+display: block;
+margin-bottom: auto;
 }
 
 .navigation-mob-list {
@@ -1323,7 +1352,7 @@ input[type='checkbox']:checked + .user-agreement-text > .custom-checkbox {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  margin-bottom: 168px;
+  
   gap: 40px;
 }
 
@@ -1338,6 +1367,10 @@ input[type='checkbox']:checked + .user-agreement-text > .custom-checkbox {
 .mob-menu-link:hover,
  .mob-menu-link:focus{
   color: #404bbf;
+}
+
+.mob-address{
+
 }
 
 .mob-address-list{
